@@ -1,0 +1,1 @@
+In this repo I will upload any tips that I gather from studying javascript and try to summerize the whole language into files that helps you memorize and remember the contents of the language.
