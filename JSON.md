@@ -47,6 +47,8 @@ number:       23
 occupiedBy: [object Object]
 */
 ```
-- [!] This is to be cautious of when trying to get rid of the cyclic references; if you don't acknowledge the empty key when removing pairs with the object, you will completely bypass the whole thing.
+>[!warning] This is to be cautious of when trying to get rid of the cyclic references; if you don't acknowledge the empty key when removing pairs with the object, you will completely bypass the whole thing.
+
+
 - [*] while stringifying, the method ignores keys with undefined values and symbols
 - [*] this method cannot stringify objects with circular references.
