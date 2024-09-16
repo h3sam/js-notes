@@ -15,7 +15,9 @@ JSON.stringify(obj, replacer, space)
 - the object is the JSON object that we have and want to stringify
 - the replacer is a function that goes through all the key:value pairs **recursively** and usually is used for filtering out specific keys or values.
 ### Replacer function gimmicks
-- [!] this method has a very niche specification and that is it references to the whole object with an empty string key, that has the whole object.
+> [!WARNING]
+>  this method has a very niche specification and that is it references to the whole object with an empty string key, that has the whole object.
+
 ```js
 let room = {
   number: 23
@@ -47,8 +49,9 @@ number:       23
 occupiedBy: [object Object]
 */
 ```
->[!warning] This is to be cautious of when trying to get rid of the cyclic references; if you don't acknowledge the empty key when removing pairs with the object, you will completely bypass the whole thing.
 
+>[!WARNING]
+>This is to be cautious of when trying to get rid of the cyclic references; if you don't acknowledge the empty key when removing pairs with the object, you will completely bypass the whole thing.
 
-- [*] while stringifying, the method ignores keys with undefined values and symbols
+- [*] while stringifying, the method ignores keys with undefined values and symbols.
 - [*] this method cannot stringify objects with circular references.

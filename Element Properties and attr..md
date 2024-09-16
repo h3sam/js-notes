@@ -6,7 +6,7 @@
 	2. We want to read the value “as written” in HTML. The value of the DOM property may be different, for instance the `href` property is always a full URL, and we may want to get the “original” value.
 # attributes
 - in general, you can access the standard attributes in any element by `elem.attr`, and the standard attributes are different for each element.
-- if you want to read and write attributes that are non-standard, you could use these methods:
+- if you want tojavascript.info read and write attributes that are non-standard, you could use these methods:
 	- `elem.hasAttribute(name)` – checks for existence.
 	- `elem.getAttribute(name)` – gets the value.
 	- `elem.setAttribute(name, value)` – sets the value.
